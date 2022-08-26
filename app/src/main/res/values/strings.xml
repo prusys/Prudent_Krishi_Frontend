@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Krishi App</string>
+    <string name="get_started">Get started</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="sensors_on_this_device">Sensors on this Device</string>
+    <string name="data_comparison">Data Comparison</string>
 </resources>
