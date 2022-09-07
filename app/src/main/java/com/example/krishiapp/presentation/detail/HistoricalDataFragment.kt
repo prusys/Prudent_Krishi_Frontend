@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.krishiapp.R
 import com.example.krishiapp.databinding.FragmentHistoricalDataBinding
 import com.example.krishiapp.domain.SensorDetails
+import com.example.krishiapp.presentation.replaceFragment
 import com.example.prusys.adapter.SensorDeviceAdapter
 
 class HistoricalDataFragment : Fragment() {
@@ -48,6 +49,10 @@ class HistoricalDataFragment : Fragment() {
             SensorDetails("Pie-Chart"),
 
         ))
+
+        binding.appCompatButton.setOnClickListener {
+            activity?.replaceFragment(R.id.frame,ComparisonFragment())
+        }
         setRv()
     }
     private fun setRv() {
