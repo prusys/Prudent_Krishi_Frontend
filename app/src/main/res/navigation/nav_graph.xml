@@ -21,11 +21,6 @@
         android:label="fragment_feed_back"
         tools:layout="@layout/fragment_feed_back" />
     <fragment
-        android:id="@+id/cartFragment"
-        android:name="com.example.krishiapp.CartFragment"
-        android:label="fragment_cart"
-        tools:layout="@layout/fragment_cart" />
-    <fragment
         android:id="@+id/profileFragment"
         android:name="com.example.krishiapp.ProfileFragment"
         android:label="fragment_profile"

@@ -1,14 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".FeedBackFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <data>
+
+    </data>
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="feedbackfragment" />
+        tools:context=".FeedBackFragment">
 
-</FrameLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:background="@color/colorSecondary"
+          android:orientation="vertical">
+
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="40dp"
+              >
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Feedback Form"
+                  android:textSize="25sp"
+                  android:fontFamily="@font/poppins"
+                  android:textColor="@color/white"
+                  android:textStyle="bold"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="32dp"
+              android:orientation="vertical">
+
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Name"
+                  android:layout_marginStart="10dp"
+                  android:textColor="@color/white"/>
+
+              <EditText
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:paddingStart="15dp"
+                  android:background="@drawable/feedback_layout_edttext"
+                  android:layout_marginTop="10dp"/>
+
+              <TextView
+                  android:layout_marginTop="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Email"
+                  android:layout_marginStart="10dp"
+                  android:textColor="@color/white"/>
+
+              <EditText
+                  android:paddingStart="15dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:background="@drawable/feedback_layout_edttext"
+                  android:layout_marginTop="10dp"/>
+
+              <TextView
+                  android:layout_marginTop="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Subject"
+                  android:layout_marginStart="10dp"
+                  android:textColor="@color/white"/>
+
+              <EditText
+                  android:paddingStart="15dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="40dp"
+                  android:hint="Enter Subject"
+                  android:textSize="15sp"
+                  android:background="@drawable/feedback_layout_edttext"
+                  android:layout_marginTop="10dp"/>
+
+              <TextView
+                  android:layout_marginTop="20dp"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Message"
+                  android:layout_marginStart="10dp"
+                  android:textColor="@color/white"/>
+
+              <EditText
+                  android:paddingStart="15dp"
+                  android:paddingTop="5dp"
+                  android:gravity="start"
+                  android:hint="Enter message"
+                  android:textSize="15sp"
+                  android:layout_width="match_parent"
+                  android:layout_height="140dp"
+                  android:background="@drawable/feedback_layout_edttext"
+                  android:layout_marginTop="10dp"/>
+
+
+
+              <androidx.appcompat.widget.AppCompatButton
+                  android:layout_width="150dp"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center_horizontal"
+                  android:layout_marginTop="30dp"
+                  android:text="submit"
+                  android:background="@drawable/edit_btn"/>
+
+          </LinearLayout>
+
+
+
+      </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+    </FrameLayout>
+</layout>

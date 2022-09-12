@@ -13,23 +13,21 @@
         android:background="@drawable/profile_background"
         tools:context=".ProfileFragment">
 
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             >
-            <ImageView
-                android:id="@+id/backBtn"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:src="@drawable/ic_baseline_arrow_back_24"
-                android:layout_margin="20dp"/>
-
 
             <LinearLayout
+                android:layout_marginTop="40dp"
                 android:id="@+id/linear"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/backBtn"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
 
@@ -65,7 +63,8 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:editable="false" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -75,7 +74,8 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:editable="false" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -86,32 +86,13 @@
 
                 <EditText
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginBottom="-1dp"
-                    android:text="Password"
-                    android:textColor="@color/white" />
+                    android:editable="false" />
 
-
-                <com.google.android.material.textfield.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:passwordToggleEnabled="true">
-
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="-10dp"
-                        android:background="#81C584" />
-                </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
         </RelativeLayout>
-
+        </androidx.core.widget.NestedScrollView>
     </FrameLayout>
 </layout>

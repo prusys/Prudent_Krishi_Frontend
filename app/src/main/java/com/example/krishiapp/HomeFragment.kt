@@ -1,5 +1,6 @@
 package com.example.krishiapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.krishiapp.databinding.FragmentHomeBinding
 import com.example.krishiapp.domain.Info
+import com.example.krishiapp.presentation.EditProfileActivity
 import com.example.prusys.adapter.HomeAdapter
 import java.util.*
 
@@ -33,6 +35,9 @@ class HomeFragment : Fragment() {
             Info("17\nKM/H",R.drawable.wind,"Speed")
         ))
         setRv()
+       binding.goToProfile.setOnClickListener {
+           startActivity(Intent(requireActivity(),EditProfileActivity::class.java))
+       }
     }
 
     private fun setRv() {

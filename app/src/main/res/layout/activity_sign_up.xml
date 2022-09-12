@@ -45,9 +45,10 @@
             android:layout_height="wrap_content"
             android:paddingStart="32dp"
             android:paddingEnd="32dp"
+            android:layout_marginTop="-10dp"
             android:orientation="vertical">
 
-            <TextView
+          <!--  <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
@@ -56,61 +57,79 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:text="Email" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:layout_marginBottom="-1dp"
-                android:text="Password" />
-
-
+-->
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true">
-
+                android:layout_marginTop="20dp"
+                android:id="@+id/layoutPhone">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-10dp"
-                    android:background="@color/colorPrimary" />
+                    android:hint="Phone"
+                    android:textColorHint="@color/white"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/edtPhone"/>
             </com.google.android.material.textfield.TextInputLayout>
-
-            <TextView
-                android:layout_marginTop="10dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:layout_marginBottom="-1dp"
-                android:text="Confirm Password" />
-
-
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:passwordToggleEnabled="true">
-
+                android:layout_marginTop="20dp"
+                android:id="@+id/layoutEmail">
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="-10dp"
-                    android:background="@color/colorPrimary" />
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/edtEmail"/>
             </com.google.android.material.textfield.TextInputLayout>
 
-            <LinearLayout
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/layoutPassword">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/edtPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:passwordToggleEnabled="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/layoutConfirmPassword">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:backgroundTint="@color/white"
+                    android:id="@+id/edtConfirmPassword"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By Signing in your agree to our Terms of Service and Privacy Policy"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"/>
+
+         <!--   <LinearLayout
                 android:layout_marginTop="5dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -155,7 +174,7 @@
                     android:textColor="@color/black"
                     android:layout_marginStart="3dp" />
             </LinearLayout>
-
+-->
         </LinearLayout>
 
         <androidx.appcompat.widget.AppCompatButton
