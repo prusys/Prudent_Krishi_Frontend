@@ -35,8 +35,19 @@
         <entry key="..\:/Users/Krishi_App/app/src/main/res/layout/historical_data.xml" value="0.253125" />
         <entry key="..\:/Users/Krishi_App/app/src/main/res/layout/items.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Krishi_App/app/src/main/res/menu/bottom_menu.xml" value="0.253125" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/drawable-v24/ic_baseline_arrow_outward_24.xml" value="0.2455" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/drawable-v24/ic_home.xml" value="0.2445" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/drawable/edit_btn.xml" value="0.2455" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/drawable/feedback_layout_edttext.xml" value="0.2455" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/activity_home.xml" value="0.2037037037037037" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/fragment_comparison.xml" value="0.264" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/fragment_feed_back.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/fragment_historical_data.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/layout/fragment_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Prudent_Krishi_Frontend/app/src/main/res/menu/bottom_menu.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
