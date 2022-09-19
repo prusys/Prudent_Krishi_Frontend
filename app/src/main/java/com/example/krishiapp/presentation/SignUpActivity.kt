@@ -41,6 +41,7 @@ class SignUpActivity : AppCompatActivity() {
             if (!Utils.isAnyFieldEmpty(requiredFields)) {
                 val email = binding.edtEmail.text.toString()
                 val password = binding.edtPassword.text.toString()
+                startActivity(Intent(this, HomeActivity::class.java))
                 //  if (password >= 6.toString()) {
 
                 //  }

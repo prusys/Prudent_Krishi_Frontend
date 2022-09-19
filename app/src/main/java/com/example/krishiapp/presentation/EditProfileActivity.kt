@@ -16,6 +16,7 @@ class EditProfileActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.backBtn.setOnClickListener {
             startActivity(Intent(this,HomeActivity::class.java))
+            finish()
         }
     }
 }
