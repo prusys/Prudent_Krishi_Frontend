@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.view.WindowManager
 import androidx.databinding.DataBindingUtil
 import com.example.krishiapp.databinding.ActivityMainBinding
-import com.example.krishiapp.presentation.SignUpActivity
+import com.example.krishiapp.presentation.login.SignUpActivity
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/temperature"
+        android:icon="@drawable/celsius"
+        android:title="Sensor"/>
+
+    <item android:id="@+id/sensor"
+        android:icon="@drawable/sensor"
+        android:title="temperature"/>
+
+    <item android:id="@+id/logout"
+        android:icon="@drawable/ic_baseline_login_24"
+        android:title="logout"/>
+</menu>
