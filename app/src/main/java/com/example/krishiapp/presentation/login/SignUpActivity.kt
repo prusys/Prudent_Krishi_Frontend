@@ -25,7 +25,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= DataBindingUtil.setContentView(this,R.layout.activity_sign_up)
         setContentView(binding.root)
-       // checkExistence()
+        checkExistence()
         binding.backBtn.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
