@@ -25,7 +25,7 @@ class SignUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= DataBindingUtil.setContentView(this,R.layout.activity_sign_up)
         setContentView(binding.root)
-        checkExistence()
+      //  checkExistence()
         binding.backBtn.setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
@@ -64,24 +64,29 @@ class SignUpActivity : AppCompatActivity() {
                 }
             }
             if (email.isEmpty()){
-                binding.edtEmail.error="enter email address"
+                binding.edtEmail.error="Enter Email address"
             }
             if (password.isEmpty()){
-                binding.edtPassword.error="please enter your password"
+                binding.edtPassword.error="Please Enter your password"
             }
             if (confirmPassword.isEmpty()){
-                binding.edtConfirmPassword.error="Please enter your confirm password"
+                binding.edtConfirmPassword.error="Please Enter your confirm password"
             }
             if (phone.isEmpty()){
-                binding.edtPhone.error="Please enter phone number"
+                binding.edtPhone.error="Please Enter phone number"
             }
 
             if (confirmPassword!=password) {
                 binding.edtConfirmPassword.error = "password should be same"
             }
             if (email.isNotEmpty() && password.isNotEmpty() && phone.isNotEmpty() && confirmPassword.isNotEmpty() && password==confirmPassword) {
+                startActivity(Intent(
+                    this@SignUpActivity,
+                   HomeActivity::class.java
+                ))
+                finish()
 
-                val call = RetrofitHelper.getRetroInstance().create(ApiService::class.java)
+             /*  val call = RetrofitHelper.getRetroInstance().create(ApiService::class.java)
                     .setDetail(phone, email, password)
                 call.enqueue(object : Callback<User> {
                     override fun onResponse(call: Call<User>, response: Response<User>) {
@@ -89,7 +94,7 @@ class SignUpActivity : AppCompatActivity() {
                         Log.d("janvi", obj)
                         Toast.makeText(this@SignUpActivity, "succesfull", Toast.LENGTH_SHORT)
                             .show()
-                        if (obj.equals("OK")) {
+                       /* if (obj.equals("OK")) {
                             val sharedPreference =
                                 getSharedPreferences("credential", MODE_PRIVATE)
                             val editor = sharedPreference.edit()
@@ -107,11 +112,12 @@ class SignUpActivity : AppCompatActivity() {
                             }
                         } else {
 
-                        }
+                        }*/
 
                     }
 
                     override fun onFailure(call: Call<User>, t: Throwable) {
+                        Log.d("janvi", "error naaaaai pta")
                         Toast.makeText(
                             this@SignUpActivity,
                             t.message.toString(),
@@ -119,7 +125,7 @@ class SignUpActivity : AppCompatActivity() {
                         ).show()
                     }
 
-                })
+                })*/
             }
 
 
