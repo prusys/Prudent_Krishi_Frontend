@@ -8,7 +8,7 @@ import retrofit2.http.POST
 
 interface ApiService {
     companion object{
-        val BASE_URL="http://127.0.0.1/login/"
+        val BASE_URL="http://127.0.0.1:80/login/"
     }
     @FormUrlEncoded
     @POST("signup.php")

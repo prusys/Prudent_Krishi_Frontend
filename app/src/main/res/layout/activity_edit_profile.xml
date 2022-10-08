@@ -87,6 +87,7 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/edtnm"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -97,6 +98,7 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/edtph"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -108,6 +110,7 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/edtem"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -119,9 +122,9 @@
                         android:textColor="@color/white" />
 
                     <EditText
+                        android:id="@+id/edtadd"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
-
 
 
                     <TextView
@@ -139,9 +142,11 @@
                         app:passwordToggleEnabled="true">
 
                         <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtps"
+                            android:layout_marginStart="-10dp"
+                            android:layout_marginTop="-15dp"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="-10dp"
                             android:background="#81C584" />
                     </com.google.android.material.textfield.TextInputLayout>
 
@@ -162,6 +167,7 @@
                             android:layout_marginStart="30dp"
                             android:layout_marginTop="50dp"/>
                         <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/save_update_btn"
                             android:layout_width="140dp"
                             android:layout_height="40dp"
                             android:text="Save"
