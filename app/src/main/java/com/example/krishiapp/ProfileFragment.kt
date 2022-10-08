@@ -2,12 +2,16 @@ package com.example.krishiapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.databinding.DataBindingUtil
 import com.example.krishiapp.databinding.FragmentProfileBinding
+import com.example.krishiapp.network.db.DataBaseHandler
+import com.example.krishiapp.network.db.SessionManager
 import com.example.krishiapp.presentation.EditProfileActivity
 
 class ProfileFragment : Fragment() {
@@ -22,8 +26,23 @@ class ProfileFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.editBtn.setOnClickListener {
-            startActivity(Intent(requireActivity(),EditProfileActivity::class.java))
+
+       // binding.username.setText(username)
+        val db= DataBaseHandler(requireContext())
+       val value= db.readData()
+        for (i in 0..value.size){
+            binding.editBtn.setOnClickListener {
+                val intent=Intent(requireActivity(),EditProfileActivity::class.java)
+                intent.putExtra("Em",value.get(0).email)
+                intent.putExtra("ps",value.get(0).password)
+                intent.putExtra("ph",value.get(0).phone)
+                startActivity(intent)
+            }
+            Log.d("janvi",value.get(0).email)
+            Toast.makeText(requireContext(), "${value.get(0).phone}", Toast.LENGTH_SHORT).show()
         }
+
+
     }
+
 }

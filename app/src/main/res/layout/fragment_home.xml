@@ -27,7 +27,7 @@
                     android:id="@+id/go_to_profile"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
-                    android:src="@drawable/profile_pic"
+                    android:src="@drawable/unknown_person"
                     />
 
                 <LinearLayout
